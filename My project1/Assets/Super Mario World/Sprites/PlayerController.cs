@@ -7,7 +7,7 @@ public class RigidbodyCollider : MonoBehaviour
 {
     [SerializeField, Range(1, 20)]
     private float speed = 5;
-    [SerializeField, RangeAttribute(1, 20)]
+    [SerializeField, Range(1, 20)]
     private float jumpForce = 10;
     [SerializeField, Range(0.01f, 1)]
     private float groundCheckRadius = 0.02f;
@@ -31,7 +31,6 @@ public class RigidbodyCollider : MonoBehaviour
         if (speed <= 0)
         {
             speed = 5;
-            Debug.Log("Speed was set incorrectly");
         }
 
         if (groundCheck == null)
@@ -44,7 +43,6 @@ public class RigidbodyCollider : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         hInput = Input.GetAxis("Horizontal");
@@ -53,12 +51,18 @@ public class RigidbodyCollider : MonoBehaviour
         {
             if (rb.velocity.y <= 0)
             {
-                isGrounded = CheckIfGrounded();
+                if (groundCheck != null) // Ensure groundCheck is not null
+                {
+                    isGrounded = CheckIfGrounded();
+                }
             }
         }
         else
         {
-            isGrounded = CheckIfGrounded();
+            if (groundCheck != null) // Ensure groundCheck is not null
+            {
+                isGrounded = CheckIfGrounded();
+            }
         }
 
         rb.velocity = new Vector2(hInput * speed, rb.velocity.y);
@@ -66,6 +70,23 @@ public class RigidbodyCollider : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            anim.SetBool("isJumping", true);
+            anim.SetBool("isJumpAttacking", true);
+        }
+        else if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            anim.SetBool("isJumping", true);
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftControl) && isGrounded)
+        {
+            anim.SetTrigger("isAttacking");
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftControl) && !isGrounded)
+        {
+            anim.SetTrigger("isJunpAttacking");
         }
 
         if (hInput != 0)
@@ -75,11 +96,16 @@ public class RigidbodyCollider : MonoBehaviour
 
         anim.SetFloat("hInput", Mathf.Abs(hInput));
         anim.SetBool("isGrounded", isGrounded);
-    }
 
+        
+    }
 
     bool CheckIfGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, isGroundLayer);
+        if (groundCheck != null)
+        {
+            return Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, isGroundLayer);
+        }
+        return false;
     }
 }
