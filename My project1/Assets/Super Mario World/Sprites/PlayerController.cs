@@ -4,10 +4,11 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class RigidbodyCollider : MonoBehaviour
-
 {
-    public float speed;
-    public Transform groundCheck;
+    [Range (1, 20)]
+    public float speed = 5;
+
+    private Trnasform groundCheck;
 
     Rigidbody2D rb;
     void Start()
@@ -19,7 +20,7 @@ public class RigidbodyCollider : MonoBehaviour
             GameObject obj = new GameObject();
             obj.transform.SetParent(transform);
             obj.transform.localPosition = Vector3.zero;
-            obj.name - "GroundCheck";
+            obj.name = "GroundCheck";
             groundCheck = obj.transform;
         }
     }
