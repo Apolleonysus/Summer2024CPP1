@@ -5,8 +5,10 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class RigidbodyCollider : MonoBehaviour
 {
-    [Range (1, 20)]
-    public float speed = 5;
+    [SerializeField, Range(1, 20)]
+    private float speed = 5;
+    [SerializeField, RangeAttribute(1, 20)]
+    private float jumpForce = 10;
 
     private Trnasform groundCheck;
 
@@ -14,6 +16,13 @@ public class RigidbodyCollider : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        if (speed <= 0)
+        {
+            speed = 5;
+            Debug.Log("Speed was set incorrectly");
+        }
+
 
         if (!groundCheck)
         {
