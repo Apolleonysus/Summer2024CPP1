@@ -13,17 +13,20 @@ public class RigidbodyCollider : MonoBehaviour
     private float groundCheckRadius = 0.02f;
     [SerializeField] private LayerMask isGroundLayer;
 
-
     private Transform groundCheck;
     private bool isGrounded = false;
 
-    Rigidbody2D rb;
-    SpriteRenderer sr;
-    Animator anim;
+    private Rigidbody2D rb;
+    private SpriteRenderer sr;
+    private Animator anim;
+
+    private float hInput;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
 
         if (speed <= 0)
         {
@@ -31,8 +34,7 @@ public class RigidbodyCollider : MonoBehaviour
             Debug.Log("Speed was set incorrectly");
         }
 
-
-        if (!groundCheck)
+        if (groundCheck == null)
         {
             GameObject obj = new GameObject();
             obj.transform.SetParent(transform);
@@ -45,10 +47,19 @@ public class RigidbodyCollider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, isGroundLayer);
-        
-        float hInput = Input.GetAxis("Horizontal");
+        hInput = Input.GetAxis("Horizontal");
 
+        if (!isGrounded)
+        {
+            if (rb.velocity.y <= 0)
+            {
+                isGrounded = CheckIfGrounded();
+            }
+        }
+        else
+        {
+            isGrounded = CheckIfGrounded();
+        }
 
         rb.velocity = new Vector2(hInput * speed, rb.velocity.y);
 
@@ -57,7 +68,18 @@ public class RigidbodyCollider : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
 
-        if (hInput != 0) sr.flipX = (hInput < 0);
+        if (hInput != 0)
+        {
+            sr.flipX = (hInput < 0);
+        }
+
+        anim.SetFloat("hInput", Mathf.Abs(hInput));
+        anim.SetBool("isGrounded", isGrounded);
     }
 
+
+    bool CheckIfGrounded()
+    {
+        return Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, isGroundLayer);
+    }
 }
