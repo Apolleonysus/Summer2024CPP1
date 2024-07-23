@@ -7,11 +7,21 @@ public class RigidbodyCollider : MonoBehaviour
 
 {
     public float speed;
+    public Transform groundCheck;
 
     Rigidbody2D rb;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        if (!groundCheck)
+        {
+            GameObject obj = new GameObject();
+            obj.transform.SetParent(transform);
+            obj.transform.localPosition = Vector3.zero;
+            obj.name - "GroundCheck";
+            groundCheck = obj.transform;
+        }
     }
 
     // Update is called once per frame
