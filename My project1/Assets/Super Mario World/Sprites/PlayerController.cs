@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D), typeof(SpriteRenderer))]
+[RequireComponent(typeof(Rigidbody2D), typeof(SpriteRenderer), typeof(Animator))]
 public class RigidbodyCollider : MonoBehaviour
 {
-    [SerializeField, Range(1, 20)]
-    private float speed = 5;
-    [SerializeField, Range(1, 20)]
-    private float jumpForce = 10;
-    [SerializeField, Range(0.01f, 1)]
-    private float groundCheckRadius = 0.02f;
+    [SerializeField, Range(1, 20)] private float speed = 5;
+    [SerializeField, Range(1, 20)] private float jumpForce = 10;
+    [SerializeField, Range(0.01f, 1)] private float groundCheckRadius = 0.02f;
     [SerializeField] private LayerMask isGroundLayer;
+    public Shoot shootScript;
+    public float fireRate = 1f;
+    private float nextFireTime;
 
     private Transform groundCheck;
     private bool isGrounded = false;
@@ -86,7 +86,7 @@ public class RigidbodyCollider : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftControl) && !isGrounded)
         {
-            anim.SetTrigger("isJunpAttacking");
+            anim.SetTrigger("isJumpAttacking");
         }
 
         if (hInput != 0)
@@ -97,7 +97,12 @@ public class RigidbodyCollider : MonoBehaviour
         anim.SetFloat("hInput", Mathf.Abs(hInput));
         anim.SetBool("isGrounded", isGrounded);
 
-        
+        // Handle shooting
+        if (Input.GetButtonDown("Fire1") && Time.time >= nextFireTime)
+        {
+            shootScript.Fire();
+            nextFireTime = Time.time + 1f / fireRate;
+        }
     }
 
     bool CheckIfGrounded()
