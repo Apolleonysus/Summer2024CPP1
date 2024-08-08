@@ -1328,13 +1328,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Megamansprites_58
+      name: Lemon
       rect:
         serializedVersion: 2
-        x: 1230
-        y: 880
-        width: 187
-        height: 53
+        x: 1374
+        y: 890
+        width: 33
+        height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2787,6 +2787,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Lemon: 650661709
       Megamansprites_0: 1817734679
       Megamansprites_1: -415867390
       Megamansprites_10: 816364396
@@ -2869,7 +2870,6 @@ TextureImporter:
       Megamansprites_55: -1901415556
       Megamansprites_56: 1062368646
       Megamansprites_57: 2123367061
-      Megamansprites_58: 650661709
       Megamansprites_59: 358123793
       Megamansprites_6: -1972719490
       Megamansprites_60: -615415794
