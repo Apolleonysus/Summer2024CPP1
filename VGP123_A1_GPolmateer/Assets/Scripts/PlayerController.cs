@@ -46,6 +46,7 @@ public class RigidbodyCollider : MonoBehaviour
     void Update()
     {
         hInput = Input.GetAxis("Horizontal");
+       
 
         if (!isGrounded)
         {

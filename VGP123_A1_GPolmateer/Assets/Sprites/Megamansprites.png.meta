@@ -74,7 +74,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
-    crunchedCompression: 0
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     overridden: 0
     ignorePlatformSupport: 0
@@ -109,27 +109,6 @@ TextureImporter:
   spriteSheet:
     serializedVersion: 2
     sprites:
-    - serializedVersion: 2
-      name: MM_idle1
-      rect:
-        serializedVersion: 2
-        x: 407
-        y: 1162
-        width: 71
-        height: 78
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c3ac24f6146dd9d40b38a30dfe9c56ec
-      internalID: 1411840618
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Megamansprites_0
       rect:
@@ -491,10 +470,10 @@ TextureImporter:
       name: Megamansprites_17
       rect:
         serializedVersion: 2
-        x: 579
+        x: 407
         y: 1162
-        width: 66
-        height: 78
+        width: 70
+        height: 74
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,10 +491,10 @@ TextureImporter:
       name: Megamansprites_18
       rect:
         serializedVersion: 2
-        x: 686
+        x: 579
         y: 1162
-        width: 78
-        height: 71
+        width: 66
+        height: 78
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,10 +512,10 @@ TextureImporter:
       name: Megamansprites_19
       rect:
         serializedVersion: 2
-        x: 775
+        x: 686
         y: 1162
-        width: 57
-        height: 78
+        width: 78
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,10 +533,10 @@ TextureImporter:
       name: Megamansprites_20
       rect:
         serializedVersion: 2
-        x: 853
+        x: 775
         y: 1162
-        width: 70
-        height: 70
+        width: 57
+        height: 78
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -575,10 +554,10 @@ TextureImporter:
       name: Megamansprites_21
       rect:
         serializedVersion: 2
-        x: 1345
+        x: 853
         y: 1162
-        width: 103
-        height: 78
+        width: 70
+        height: 70
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,10 +575,10 @@ TextureImporter:
       name: Megamansprites_22
       rect:
         serializedVersion: 2
-        x: 1074
-        y: 1124
-        width: 64
-        height: 25
+        x: 1345
+        y: 1162
+        width: 103
+        height: 78
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -617,9 +596,9 @@ TextureImporter:
       name: Megamansprites_23
       rect:
         serializedVersion: 2
-        x: 1139
-        y: 1121
-        width: 99
+        x: 1074
+        y: 1124
+        width: 64
         height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -638,9 +617,9 @@ TextureImporter:
       name: Megamansprites_24
       rect:
         serializedVersion: 2
-        x: 401
-        y: 1099
-        width: 91
+        x: 1139
+        y: 1121
+        width: 99
         height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -659,9 +638,9 @@ TextureImporter:
       name: Megamansprites_25
       rect:
         serializedVersion: 2
-        x: 492
+        x: 401
         y: 1099
-        width: 21
+        width: 91
         height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -680,9 +659,9 @@ TextureImporter:
       name: Megamansprites_26
       rect:
         serializedVersion: 2
-        x: 514
-        y: 1096
-        width: 53
+        x: 492
+        y: 1099
+        width: 21
         height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -701,10 +680,10 @@ TextureImporter:
       name: Megamansprites_27
       rect:
         serializedVersion: 2
-        x: 839
-        y: 1090
-        width: 93
-        height: 28
+        x: 514
+        y: 1096
+        width: 53
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -722,10 +701,10 @@ TextureImporter:
       name: Megamansprites_28
       rect:
         serializedVersion: 2
-        x: 955
-        y: 1093
-        width: 90
-        height: 25
+        x: 839
+        y: 1090
+        width: 93
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -743,10 +722,10 @@ TextureImporter:
       name: Megamansprites_29
       rect:
         serializedVersion: 2
-        x: 1283
-        y: 1090
-        width: 93
-        height: 28
+        x: 955
+        y: 1093
+        width: 90
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -764,10 +743,10 @@ TextureImporter:
       name: Megamansprites_30
       rect:
         serializedVersion: 2
-        x: 1398
-        y: 1093
-        width: 90
-        height: 25
+        x: 1283
+        y: 1090
+        width: 93
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -785,9 +764,9 @@ TextureImporter:
       name: Megamansprites_31
       rect:
         serializedVersion: 2
-        x: 402
-        y: 1068
-        width: 21
+        x: 1398
+        y: 1093
+        width: 90
         height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -806,9 +785,9 @@ TextureImporter:
       name: Megamansprites_32
       rect:
         serializedVersion: 2
-        x: 423
+        x: 402
         y: 1068
-        width: 53
+        width: 21
         height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -827,9 +806,9 @@ TextureImporter:
       name: Megamansprites_33
       rect:
         serializedVersion: 2
-        x: 517
+        x: 423
         y: 1068
-        width: 49
+        width: 53
         height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -848,9 +827,9 @@ TextureImporter:
       name: Megamansprites_34
       rect:
         serializedVersion: 2
-        x: 567
+        x: 517
         y: 1068
-        width: 31
+        width: 49
         height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -869,10 +848,10 @@ TextureImporter:
       name: Megamansprites_35
       rect:
         serializedVersion: 2
-        x: 839
-        y: 984
-        width: 103
-        height: 102
+        x: 567
+        y: 1068
+        width: 31
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -890,9 +869,9 @@ TextureImporter:
       name: Megamansprites_36
       rect:
         serializedVersion: 2
-        x: 955
+        x: 839
         y: 984
-        width: 77
+        width: 103
         height: 102
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -911,10 +890,10 @@ TextureImporter:
       name: Megamansprites_37
       rect:
         serializedVersion: 2
-        x: 1073
-        y: 980
-        width: 312
-        height: 106
+        x: 955
+        y: 984
+        width: 77
+        height: 102
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -933,9 +912,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1073
-        y: 1068
-        width: 22
-        height: 25
+        y: 980
+        width: 312
+        height: 106
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -953,9 +932,9 @@ TextureImporter:
       name: Megamansprites_39
       rect:
         serializedVersion: 2
-        x: 1095
+        x: 1073
         y: 1068
-        width: 53
+        width: 22
         height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -974,10 +953,10 @@ TextureImporter:
       name: Megamansprites_40
       rect:
         serializedVersion: 2
-        x: 1398
-        y: 984
-        width: 78
-        height: 102
+        x: 1095
+        y: 1068
+        width: 53
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -995,10 +974,10 @@ TextureImporter:
       name: Megamansprites_41
       rect:
         serializedVersion: 2
-        x: 401
+        x: 1398
         y: 984
-        width: 102
-        height: 77
+        width: 78
+        height: 102
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1016,9 +995,9 @@ TextureImporter:
       name: Megamansprites_42
       rect:
         serializedVersion: 2
-        x: 517
+        x: 401
         y: 984
-        width: 309
+        width: 102
         height: 77
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1037,10 +1016,10 @@ TextureImporter:
       name: Megamansprites_43
       rect:
         serializedVersion: 2
-        x: 401
-        y: 943
-        width: 112
-        height: 28
+        x: 517
+        y: 984
+        width: 309
+        height: 77
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1058,10 +1037,10 @@ TextureImporter:
       name: Megamansprites_44
       rect:
         serializedVersion: 2
-        x: 527
-        y: 946
-        width: 71
-        height: 25
+        x: 401
+        y: 943
+        width: 112
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1079,10 +1058,10 @@ TextureImporter:
       name: Megamansprites_45
       rect:
         serializedVersion: 2
-        x: 917
-        y: 937
-        width: 93
-        height: 28
+        x: 527
+        y: 946
+        width: 71
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1100,10 +1079,10 @@ TextureImporter:
       name: Megamansprites_46
       rect:
         serializedVersion: 2
-        x: 1033
-        y: 940
-        width: 21
-        height: 25
+        x: 917
+        y: 937
+        width: 93
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1121,10 +1100,10 @@ TextureImporter:
       name: Megamansprites_47
       rect:
         serializedVersion: 2
-        x: 1052
-        y: 937
-        width: 140
-        height: 27
+        x: 1033
+        y: 940
+        width: 21
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1142,10 +1121,10 @@ TextureImporter:
       name: Megamansprites_48
       rect:
         serializedVersion: 2
-        x: 1230
-        y: 940
-        width: 71
-        height: 25
+        x: 1052
+        y: 937
+        width: 140
+        height: 27
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1163,10 +1142,10 @@ TextureImporter:
       name: Megamansprites_49
       rect:
         serializedVersion: 2
-        x: 1299
+        x: 1230
         y: 940
-        width: 43
-        height: 24
+        width: 71
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1184,10 +1163,10 @@ TextureImporter:
       name: Megamansprites_50
       rect:
         serializedVersion: 2
-        x: 402
-        y: 915
-        width: 21
-        height: 25
+        x: 1299
+        y: 940
+        width: 43
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1205,10 +1184,10 @@ TextureImporter:
       name: Megamansprites_51
       rect:
         serializedVersion: 2
-        x: 423
+        x: 402
         y: 915
-        width: 53
-        height: 24
+        width: 21
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1226,10 +1205,10 @@ TextureImporter:
       name: Megamansprites_52
       rect:
         serializedVersion: 2
-        x: 570
+        x: 423
         y: 915
-        width: 65
-        height: 25
+        width: 53
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1247,10 +1226,10 @@ TextureImporter:
       name: Megamansprites_53
       rect:
         serializedVersion: 2
-        x: 636
+        x: 570
         y: 915
-        width: 21
-        height: 24
+        width: 65
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1268,9 +1247,9 @@ TextureImporter:
       name: Megamansprites_54
       rect:
         serializedVersion: 2
-        x: 670
+        x: 636
         y: 915
-        width: 81
+        width: 21
         height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1289,10 +1268,10 @@ TextureImporter:
       name: Megamansprites_55
       rect:
         serializedVersion: 2
-        x: 917
-        y: 831
-        width: 103
-        height: 102
+        x: 670
+        y: 915
+        width: 81
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1310,9 +1289,9 @@ TextureImporter:
       name: Megamansprites_56
       rect:
         serializedVersion: 2
-        x: 1033
+        x: 917
         y: 831
-        width: 184
+        width: 103
         height: 102
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1331,10 +1310,10 @@ TextureImporter:
       name: Megamansprites_57
       rect:
         serializedVersion: 2
-        x: 1230
-        y: 880
-        width: 187
-        height: 53
+        x: 1033
+        y: 831
+        width: 184
+        height: 102
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1352,10 +1331,10 @@ TextureImporter:
       name: Megamansprites_58
       rect:
         serializedVersion: 2
-        x: 402
-        y: 831
-        width: 155
-        height: 77
+        x: 1230
+        y: 880
+        width: 187
+        height: 53
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1373,9 +1352,9 @@ TextureImporter:
       name: Megamansprites_59
       rect:
         serializedVersion: 2
-        x: 570
+        x: 402
         y: 831
-        width: 78
+        width: 155
         height: 77
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1394,9 +1373,9 @@ TextureImporter:
       name: Megamansprites_60
       rect:
         serializedVersion: 2
-        x: 670
+        x: 570
         y: 831
-        width: 234
+        width: 78
         height: 77
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1415,10 +1394,10 @@ TextureImporter:
       name: Megamansprites_61
       rect:
         serializedVersion: 2
-        x: 402
-        y: 709
-        width: 365
-        height: 102
+        x: 670
+        y: 831
+        width: 234
+        height: 77
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1437,9 +1416,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 402
-        y: 790
-        width: 121
-        height: 28
+        y: 709
+        width: 365
+        height: 102
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1458,9 +1437,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 402
-        y: 671
-        width: 55
-        height: 25
+        y: 790
+        width: 121
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1478,10 +1457,10 @@ TextureImporter:
       name: Megamansprites_64
       rect:
         serializedVersion: 2
-        x: 458
+        x: 402
         y: 671
-        width: 24
-        height: 19
+        width: 55
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1499,9 +1478,9 @@ TextureImporter:
       name: Megamansprites_65
       rect:
         serializedVersion: 2
-        x: 483
+        x: 458
         y: 671
-        width: 21
+        width: 24
         height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1520,10 +1499,10 @@ TextureImporter:
       name: Megamansprites_66
       rect:
         serializedVersion: 2
-        x: 505
+        x: 483
         y: 671
-        width: 143
-        height: 25
+        width: 21
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1541,10 +1520,10 @@ TextureImporter:
       name: Megamansprites_67
       rect:
         serializedVersion: 2
-        x: 864
-        y: 662
-        width: 93
-        height: 28
+        x: 505
+        y: 671
+        width: 143
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1562,10 +1541,10 @@ TextureImporter:
       name: Megamansprites_68
       rect:
         serializedVersion: 2
-        x: 980
-        y: 665
-        width: 90
-        height: 24
+        x: 864
+        y: 662
+        width: 93
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1583,10 +1562,10 @@ TextureImporter:
       name: Megamansprites_69
       rect:
         serializedVersion: 2
-        x: 1211
+        x: 980
         y: 665
-        width: 24
-        height: 25
+        width: 90
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1604,10 +1583,10 @@ TextureImporter:
       name: Megamansprites_70
       rect:
         serializedVersion: 2
-        x: 1233
+        x: 1211
         y: 665
         width: 24
-        height: 18
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1625,9 +1604,9 @@ TextureImporter:
       name: Megamansprites_71
       rect:
         serializedVersion: 2
-        x: 1258
+        x: 1233
         y: 665
-        width: 21
+        width: 24
         height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1646,7 +1625,7 @@ TextureImporter:
       name: Megamansprites_72
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 1258
         y: 665
         width: 21
         height: 18
@@ -1667,10 +1646,10 @@ TextureImporter:
       name: Megamansprites_73
       rect:
         serializedVersion: 2
-        x: 402
-        y: 640
+        x: 1280
+        y: 665
         width: 21
-        height: 25
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1688,10 +1667,10 @@ TextureImporter:
       name: Megamansprites_74
       rect:
         serializedVersion: 2
-        x: 423
+        x: 402
         y: 640
-        width: 53
-        height: 24
+        width: 21
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1709,10 +1688,10 @@ TextureImporter:
       name: Megamansprites_75
       rect:
         serializedVersion: 2
-        x: 492
+        x: 423
         y: 640
-        width: 21
-        height: 25
+        width: 53
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1730,10 +1709,10 @@ TextureImporter:
       name: Megamansprites_76
       rect:
         serializedVersion: 2
-        x: 514
+        x: 492
         y: 640
-        width: 43
-        height: 18
+        width: 21
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1751,10 +1730,10 @@ TextureImporter:
       name: Megamansprites_77
       rect:
         serializedVersion: 2
-        x: 558
+        x: 514
         y: 640
-        width: 21
-        height: 24
+        width: 43
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1772,9 +1751,9 @@ TextureImporter:
       name: Megamansprites_78
       rect:
         serializedVersion: 2
-        x: 592
+        x: 558
         y: 640
-        width: 81
+        width: 21
         height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1793,10 +1772,10 @@ TextureImporter:
       name: Megamansprites_79
       rect:
         serializedVersion: 2
-        x: 864
-        y: 556
-        width: 103
-        height: 102
+        x: 592
+        y: 640
+        width: 81
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1814,9 +1793,9 @@ TextureImporter:
       name: Megamansprites_80
       rect:
         serializedVersion: 2
-        x: 980
+        x: 864
         y: 556
-        width: 102
+        width: 103
         height: 102
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1835,10 +1814,10 @@ TextureImporter:
       name: Megamansprites_81
       rect:
         serializedVersion: 2
-        x: 1095
-        y: 640
-        width: 25
-        height: 25
+        x: 980
+        y: 556
+        width: 102
+        height: 102
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1856,10 +1835,10 @@ TextureImporter:
       name: Megamansprites_82
       rect:
         serializedVersion: 2
-        x: 1117
+        x: 1095
         y: 640
-        width: 21
-        height: 24
+        width: 25
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1877,10 +1856,10 @@ TextureImporter:
       name: Megamansprites_83
       rect:
         serializedVersion: 2
-        x: 1139
+        x: 1117
         y: 640
-        width: 43
-        height: 18
+        width: 21
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1898,10 +1877,10 @@ TextureImporter:
       name: Megamansprites_84
       rect:
         serializedVersion: 2
-        x: 1211
-        y: 631
-        width: 168
-        height: 27
+        x: 1139
+        y: 640
+        width: 43
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1919,10 +1898,10 @@ TextureImporter:
       name: Megamansprites_85
       rect:
         serializedVersion: 2
-        x: 402
-        y: 556
-        width: 77
-        height: 77
+        x: 1211
+        y: 631
+        width: 168
+        height: 27
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1940,9 +1919,9 @@ TextureImporter:
       name: Megamansprites_86
       rect:
         serializedVersion: 2
-        x: 492
+        x: 402
         y: 556
-        width: 78
+        width: 77
         height: 77
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1961,9 +1940,9 @@ TextureImporter:
       name: Megamansprites_87
       rect:
         serializedVersion: 2
-        x: 592
+        x: 492
         y: 556
-        width: 259
+        width: 78
         height: 77
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -1982,9 +1961,9 @@ TextureImporter:
       name: Megamansprites_88
       rect:
         serializedVersion: 2
-        x: 1095
+        x: 592
         y: 556
-        width: 103
+        width: 259
         height: 77
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -2003,10 +1982,10 @@ TextureImporter:
       name: Megamansprites_89
       rect:
         serializedVersion: 2
-        x: 1073
-        y: 518
-        width: 65
-        height: 25
+        x: 1095
+        y: 556
+        width: 103
+        height: 77
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2024,9 +2003,9 @@ TextureImporter:
       name: Megamansprites_90
       rect:
         serializedVersion: 2
-        x: 1139
-        y: 515
-        width: 99
+        x: 1073
+        y: 518
+        width: 65
         height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -2045,9 +2024,9 @@ TextureImporter:
       name: Megamansprites_91
       rect:
         serializedVersion: 2
-        x: 401
-        y: 493
-        width: 91
+        x: 1139
+        y: 515
+        width: 99
         height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -2066,9 +2045,9 @@ TextureImporter:
       name: Megamansprites_92
       rect:
         serializedVersion: 2
-        x: 492
+        x: 401
         y: 493
-        width: 21
+        width: 91
         height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -2087,9 +2066,9 @@ TextureImporter:
       name: Megamansprites_93
       rect:
         serializedVersion: 2
-        x: 514
-        y: 490
-        width: 53
+        x: 492
+        y: 493
+        width: 21
         height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -2108,10 +2087,10 @@ TextureImporter:
       name: Megamansprites_94
       rect:
         serializedVersion: 2
-        x: 839
-        y: 484
-        width: 93
-        height: 27
+        x: 514
+        y: 490
+        width: 53
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2129,10 +2108,10 @@ TextureImporter:
       name: Megamansprites_95
       rect:
         serializedVersion: 2
-        x: 955
-        y: 487
-        width: 90
-        height: 24
+        x: 839
+        y: 484
+        width: 93
+        height: 27
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2150,10 +2129,10 @@ TextureImporter:
       name: Megamansprites_96
       rect:
         serializedVersion: 2
-        x: 1189
-        y: 484
-        width: 93
-        height: 27
+        x: 955
+        y: 487
+        width: 90
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2171,10 +2150,10 @@ TextureImporter:
       name: Megamansprites_97
       rect:
         serializedVersion: 2
-        x: 1305
-        y: 487
-        width: 90
-        height: 24
+        x: 1189
+        y: 484
+        width: 93
+        height: 27
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2192,9 +2171,9 @@ TextureImporter:
       name: Megamansprites_98
       rect:
         serializedVersion: 2
-        x: 402
-        y: 462
-        width: 21
+        x: 1305
+        y: 487
+        width: 90
         height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -2213,9 +2192,9 @@ TextureImporter:
       name: Megamansprites_99
       rect:
         serializedVersion: 2
-        x: 423
+        x: 402
         y: 462
-        width: 53
+        width: 21
         height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -2234,9 +2213,9 @@ TextureImporter:
       name: Megamansprites_100
       rect:
         serializedVersion: 2
-        x: 517
+        x: 423
         y: 462
-        width: 81
+        width: 53
         height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -2255,10 +2234,10 @@ TextureImporter:
       name: Megamansprites_101
       rect:
         serializedVersion: 2
-        x: 839
-        y: 378
-        width: 103
-        height: 102
+        x: 517
+        y: 462
+        width: 81
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2276,9 +2255,9 @@ TextureImporter:
       name: Megamansprites_102
       rect:
         serializedVersion: 2
-        x: 955
+        x: 839
         y: 378
-        width: 77
+        width: 103
         height: 102
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -2297,10 +2276,10 @@ TextureImporter:
       name: Megamansprites_103
       rect:
         serializedVersion: 2
-        x: 1073
-        y: 462
-        width: 22
-        height: 24
+        x: 955
+        y: 378
+        width: 77
+        height: 102
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2318,9 +2297,9 @@ TextureImporter:
       name: Megamansprites_104
       rect:
         serializedVersion: 2
-        x: 1095
+        x: 1073
         y: 462
-        width: 53
+        width: 22
         height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -2339,10 +2318,10 @@ TextureImporter:
       name: Megamansprites_105
       rect:
         serializedVersion: 2
-        x: 1189
-        y: 378
-        width: 103
-        height: 102
+        x: 1095
+        y: 462
+        width: 53
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2360,9 +2339,9 @@ TextureImporter:
       name: Megamansprites_106
       rect:
         serializedVersion: 2
-        x: 1305
+        x: 1189
         y: 378
-        width: 77
+        width: 103
         height: 102
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -2381,10 +2360,10 @@ TextureImporter:
       name: Megamansprites_107
       rect:
         serializedVersion: 2
-        x: 401
+        x: 1305
         y: 378
-        width: 103
-        height: 77
+        width: 77
+        height: 102
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2402,10 +2381,10 @@ TextureImporter:
       name: Megamansprites_108
       rect:
         serializedVersion: 2
-        x: 517
-        y: 377
-        width: 309
-        height: 78
+        x: 401
+        y: 378
+        width: 103
+        height: 77
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2423,10 +2402,10 @@ TextureImporter:
       name: Megamansprites_109
       rect:
         serializedVersion: 2
-        x: 1073
-        y: 378
-        width: 103
-        height: 77
+        x: 517
+        y: 377
+        width: 309
+        height: 78
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2444,10 +2423,10 @@ TextureImporter:
       name: Megamansprites_110
       rect:
         serializedVersion: 2
-        x: 401
-        y: 337
-        width: 112
-        height: 28
+        x: 1073
+        y: 378
+        width: 103
+        height: 77
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2465,10 +2444,10 @@ TextureImporter:
       name: Megamansprites_111
       rect:
         serializedVersion: 2
-        x: 527
-        y: 340
-        width: 71
-        height: 25
+        x: 401
+        y: 337
+        width: 112
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2486,10 +2465,10 @@ TextureImporter:
       name: Megamansprites_112
       rect:
         serializedVersion: 2
-        x: 839
-        y: 331
-        width: 93
-        height: 27
+        x: 527
+        y: 340
+        width: 71
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2507,10 +2486,10 @@ TextureImporter:
       name: Megamansprites_113
       rect:
         serializedVersion: 2
-        x: 402
-        y: 309
-        width: 21
-        height: 24
+        x: 839
+        y: 331
+        width: 93
+        height: 27
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2528,9 +2507,9 @@ TextureImporter:
       name: Megamansprites_114
       rect:
         serializedVersion: 2
-        x: 423
+        x: 402
         y: 309
-        width: 53
+        width: 21
         height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -2549,9 +2528,9 @@ TextureImporter:
       name: Megamansprites_115
       rect:
         serializedVersion: 2
-        x: 492
+        x: 423
         y: 309
-        width: 21
+        width: 53
         height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -2570,10 +2549,10 @@ TextureImporter:
       name: Megamansprites_116
       rect:
         serializedVersion: 2
-        x: 514
+        x: 492
         y: 309
-        width: 43
-        height: 18
+        width: 21
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2591,10 +2570,10 @@ TextureImporter:
       name: Megamansprites_117
       rect:
         serializedVersion: 2
-        x: 558
+        x: 514
         y: 309
-        width: 21
-        height: 24
+        width: 43
+        height: 18
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2612,9 +2591,9 @@ TextureImporter:
       name: Megamansprites_118
       rect:
         serializedVersion: 2
-        x: 592
+        x: 558
         y: 309
-        width: 81
+        width: 21
         height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -2633,10 +2612,10 @@ TextureImporter:
       name: Megamansprites_119
       rect:
         serializedVersion: 2
-        x: 839
-        y: 224
-        width: 103
-        height: 103
+        x: 592
+        y: 309
+        width: 81
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2654,9 +2633,9 @@ TextureImporter:
       name: Megamansprites_120
       rect:
         serializedVersion: 2
-        x: 955
+        x: 839
         y: 224
-        width: 365
+        width: 103
         height: 103
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -2676,9 +2655,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 955
-        y: 306
-        width: 121
-        height: 27
+        y: 224
+        width: 365
+        height: 103
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2696,10 +2675,10 @@ TextureImporter:
       name: Megamansprites_122
       rect:
         serializedVersion: 2
-        x: 402
-        y: 224
-        width: 77
-        height: 78
+        x: 955
+        y: 306
+        width: 121
+        height: 27
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2717,9 +2696,9 @@ TextureImporter:
       name: Megamansprites_123
       rect:
         serializedVersion: 2
-        x: 492
+        x: 402
         y: 224
-        width: 78
+        width: 77
         height: 78
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -2738,9 +2717,9 @@ TextureImporter:
       name: Megamansprites_124
       rect:
         serializedVersion: 2
-        x: 592
+        x: 492
         y: 224
-        width: 234
+        width: 78
         height: 78
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -2759,6 +2738,27 @@ TextureImporter:
       name: Megamansprites_125
       rect:
         serializedVersion: 2
+        x: 592
+        y: 224
+        width: 234
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3c450143b2cd246b4ac786fbfb1f61
+      internalID: -5175661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Megamansprites_126
+      rect:
+        serializedVersion: 2
         x: 786
         y: 115
         width: 702
@@ -2770,8 +2770,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb3c450143b2cd246b4ac786fbfb1f61
-      internalID: -5175661
+      spriteID: 8673c384e29dfbc4da8ec1419b333928
+      internalID: -1822263906
       vertices: []
       indices: 
       edges: []
@@ -2787,7 +2787,6 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MM_idle1: 1411840618
       Megamansprites_0: 1817734679
       Megamansprites_1: -415867390
       Megamansprites_10: 816364396
@@ -2819,6 +2818,8 @@ TextureImporter:
       Megamansprites_123: 1235809724
       Megamansprites_124: -1035348478
       Megamansprites_125: -5175661
+      Megamansprites_126: -1822263906
+      Megamansprites_127: -165120377
       Megamansprites_13: 1040880401
       Megamansprites_14: -216415832
       Megamansprites_15: -915151440
