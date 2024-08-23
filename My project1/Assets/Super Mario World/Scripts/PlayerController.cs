@@ -104,7 +104,15 @@ public class RigidbodyCollider : MonoBehaviour
             nextFireTime = Time.time + 1f / fireRate;
         }
     }
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Squish"))
+        {
+            collision.gameObject.GetComponentInParent<Enemy>().TakeDamage(9999);
+            rb.velocity = Vector2.zero;
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        }
+    }
     bool CheckIfGrounded()
     {
         if (groundCheck != null)

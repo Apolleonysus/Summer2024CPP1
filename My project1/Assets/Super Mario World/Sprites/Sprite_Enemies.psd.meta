@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -6284,7 +6284,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Enemies_294
+      name: Turret Death1
       rect:
         serializedVersion: 2
         x: 860
@@ -6305,7 +6305,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Enemies_295
+      name: Turret Death2
       rect:
         serializedVersion: 2
         x: 871
@@ -6326,12 +6326,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Enemies_296
+      name: Turret Death3
       rect:
         serializedVersion: 2
         x: 882
         y: 361
-        width: 13
+        width: 4
         height: 4
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -7187,7 +7187,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Enemies_337
+      name: Turret Fire1
       rect:
         serializedVersion: 2
         x: 800
@@ -7208,7 +7208,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Enemies_338
+      name: Turret Fire2
       rect:
         serializedVersion: 2
         x: 823
@@ -7229,7 +7229,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Enemies_339
+      name: Turret Fire3
       rect:
         serializedVersion: 2
         x: 852
@@ -7250,7 +7250,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Enemies_340
+      name: Turret Idle
       rect:
         serializedVersion: 2
         x: 881
@@ -9980,7 +9980,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite_Enemies_470
+      name: koopaDeath
       rect:
         serializedVersion: 2
         x: 250
@@ -14599,6 +14599,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Turret Death4
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 361
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91f5103ad748de44b7be61bf6eb79d6
+      internalID: 1704670787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Turret Death5
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 350
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485ff2329ac75d1479aeff368a4b34bc
+      internalID: -1311959746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -14827,9 +14869,6 @@ TextureImporter:
       Sprite_Enemies_291: -1450483842
       Sprite_Enemies_292: -1440750395
       Sprite_Enemies_293: -168576738
-      Sprite_Enemies_294: -2037484648
-      Sprite_Enemies_295: 1640912324
-      Sprite_Enemies_296: -522269190
       Sprite_Enemies_297: 497615375
       Sprite_Enemies_298: -1378871303
       Sprite_Enemies_299: 2107541914
@@ -14875,11 +14914,7 @@ TextureImporter:
       Sprite_Enemies_334: 1602909648
       Sprite_Enemies_335: -824035741
       Sprite_Enemies_336: 569866789
-      Sprite_Enemies_337: -1162879512
-      Sprite_Enemies_338: 2043187285
-      Sprite_Enemies_339: 488396713
       Sprite_Enemies_34: 1320380600
-      Sprite_Enemies_340: 703884495
       Sprite_Enemies_341: -1821264853
       Sprite_Enemies_342: 1553486036
       Sprite_Enemies_343: 1647949282
@@ -15023,7 +15058,6 @@ TextureImporter:
       Sprite_Enemies_468: 836891777
       Sprite_Enemies_469: -708947853
       Sprite_Enemies_47: 499202740
-      Sprite_Enemies_470: -2002901950
       Sprite_Enemies_471: -1196031984
       Sprite_Enemies_472: 1538441991
       Sprite_Enemies_473: 77370304
@@ -15300,6 +15334,16 @@ TextureImporter:
       Sprite_Enemies_97: -1026681750
       Sprite_Enemies_98: -421425756
       Sprite_Enemies_99: -986883796
+      Turret Death1: -2037484648
+      Turret Death2: 1640912324
+      Turret Death3: -522269190
+      Turret Death4: 1704670787
+      Turret Death5: -1311959746
+      Turret Fire1: -1162879512
+      Turret Fire2: 2043187285
+      Turret Fire3: 488396713
+      Turret Idle: 703884495
+      koopaDeath: -2002901950
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

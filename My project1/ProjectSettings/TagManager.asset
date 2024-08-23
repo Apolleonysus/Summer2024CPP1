@@ -6,6 +6,9 @@ TagManager:
   tags:
   - PowerUp
   - Collectible
+  - Enemy
+  - Squish
+  - Barrier
   layers:
   - Default
   - TransparentFX
