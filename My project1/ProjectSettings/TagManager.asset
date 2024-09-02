@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Squish
   - Barrier
+  - Pickup
   layers:
   - Default
   - TransparentFX

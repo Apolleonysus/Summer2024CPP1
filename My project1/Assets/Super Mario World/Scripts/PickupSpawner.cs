@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollectibleSpawner : MonoBehaviour
+public class PickupSpawner : MonoBehaviour
 {
     public List<GameObject> collectibles; 
     public List<Transform> spawnPoints;   

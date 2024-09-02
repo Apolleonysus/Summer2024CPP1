@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Collectible : MonoBehaviour
+public class PickupContact : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {
