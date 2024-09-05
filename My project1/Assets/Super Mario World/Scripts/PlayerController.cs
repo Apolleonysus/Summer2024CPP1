@@ -146,6 +146,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+
         //Sprite Flipping
         if (hInput != 0) sr.flipX = (hInput < 0);
         //if (hInput > 0 && sr.flipX || hInput < 0 && !sr.flipX) sr.flipX = !sr.flipX;
