@@ -1,10 +1,14 @@
 using System.Collections;
+using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.Audio;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(SpriteRenderer), typeof(Animator))]
+[RequireComponent(typeof(AudioSource))]
+
 public class PlayerController : MonoBehaviour
 {
-    //Player gameplay variables
+    // Player gameplay variables
     private Coroutine jumpForceChange;
     private Coroutine speedChange;
 
@@ -31,7 +35,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator PowerupChange(Pickup.PickupType type)
     {
-        //this code runs before the wait
+        // this code runs before the wait
         if (type == Pickup.PickupType.PowerupSpeed)
             speed *= 2;
 
@@ -56,30 +60,42 @@ public class PlayerController : MonoBehaviour
         Debug.Log($"Jump force value is {jumpForce}, Speed value is {speed}");
     }
 
-    //Movement Variables
+    // Movement Variables
     [SerializeField, Range(1, 20)] private float speed = 5;
     [SerializeField, Range(1, 20)] private float jumpForce = 10;
     [SerializeField, Range(0.01f, 1)] private float groundCheckRadius = 0.02f;
     [SerializeField] private LayerMask isGroundLayer;
 
-    //GroundCheck Stuff
+    // GroundCheck Stuff
     private Transform groundCheck;
     private bool isGrounded = false;
 
-    //Component References
+    // Component References
     Rigidbody2D rb;
     SpriteRenderer sr;
     Animator anim;
+    AudioSource audioSource;
+
+    // Audio Clip references
+    [SerializeField] private AudioClip jumpClip;
+    [SerializeField] private AudioClip stompClip;
+    [SerializeField] private AudioClip deathClip; // Sound when the player dies
+
+    // AudioMixerCHannel reference
+    public AudioMixerGroup SFXGroup;
 
     // Start is called before the first frame update
     void Start()
     {
-        //Component References Filled
+        // Component References Filled
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
 
-        //Checking values to ensure non garbage data
+        audioSource.outputAudioMixerGroup = GameManager.Instance.SFXGroup;
+
+        // Checking values to ensure non garbage data
         if (speed <= 0)
         {
             speed = 5;
@@ -92,7 +108,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("JumpForce was set incorrectly");
         }
 
-        //Creating groundcheck object
+        // Creating groundcheck object
         if (!groundCheck)
         {
             GameObject obj = new GameObject();
@@ -106,32 +122,33 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Time.timeScale <= 0) return;
+
         AnimatorClipInfo[] curPlayingClips = anim.GetCurrentAnimatorClipInfo(0);
-        //grab horizontal axis - Check Project Settings > Input Manager to see the inputs defined
+        // grab horizontal axis - Check Project Settings > Input Manager to see the inputs defined
         float hInput = Input.GetAxis("Horizontal");
 
-        //Create a small overlap collider to check if we are touching the ground
+        // Create a small overlap collider to check if we are touching the ground
         IsGrounded();
 
-
-        //Animation check for our physics
+        // Animation check for our physics
         if (curPlayingClips.Length > 0)
         {
             if (curPlayingClips[0].clip.name == "Attack")
             {
                 if (isGrounded)
                     rb.velocity = Vector2.zero;
-                //new Vector2(0, rb.velocity.y);
+                // new Vector2(0, rb.velocity.y);
             }
             else
                 rb.velocity = new Vector2(hInput * speed, rb.velocity.y);
         }
 
-
-        //Button Input Checks
+        // Button Input Checks
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            audioSource.PlayOneShot(jumpClip);
         }
 
         if (Input.GetButtonDown("Fire1"))
@@ -146,18 +163,15 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-
-        //Sprite Flipping
+        // Sprite Flipping
         if (hInput != 0) sr.flipX = (hInput < 0);
-        //if (hInput > 0 && sr.flipX || hInput < 0 && !sr.flipX) sr.flipX = !sr.flipX;
 
         anim.SetFloat("hInput", Mathf.Abs(hInput));
         anim.SetBool("isGrounded", isGrounded);
-
     }
 
     /// <summary>
-    /// This function is used to check if we are grounded.  When we jump - we disable checking if we are grounded until our velocity reaches negative on the y-axis - this indicates that we are falling and we should start to check if we are grounded again. This is done to prevent us flipping to grounded when we jump through a platform.
+    /// This function is used to check if we are grounded. When we jump - we disable checking if we are grounded until our velocity reaches negative on the y-axis - this indicates that we are falling and we should start to check if we are grounded again. This is done to prevent us flipping to grounded when we jump through a platform.
     /// </summary>
     void IsGrounded()
     {
@@ -182,6 +196,12 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             GameManager.Instance.lives--;
+
+            // If the player dies (lives <= 0), play the death sound
+            if (GameManager.Instance.lives <= 0)
+            {
+                PlayDeathSound();
+            }
         }
     }
 
@@ -192,6 +212,13 @@ public class PlayerController : MonoBehaviour
             collision.gameObject.GetComponentInParent<Enemy>().TakeDamage(9999);
             rb.velocity = Vector2.zero;
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            audioSource.PlayOneShot(stompClip);
         }
+    }
+
+    // Play the death sound effect
+    private void PlayDeathSound()
+    {
+        audioSource.PlayOneShot(deathClip); // Play death sound effect
     }
 }
