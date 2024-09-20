@@ -3,28 +3,30 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Projectile : MonoBehaviour
 {
-    [SerializeField, Range(1, 50)] private float lifetime = 2.0f;
+    [SerializeField, Range(1, 50)] private float lifetime;
 
+    // Start is called before the first frame update
     void Start()
     {
+        if (lifetime <= 0) lifetime = 2.0f;
         Destroy(gameObject, lifetime);
     }
 
     public void SetVelocity(float xVel, float yVel)
     {
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(xVel, yVel);
-        Debug.Log($"Projectile velocity set to: {rb.velocity}");
+        GetComponent<Rigidbody2D>().velocity = new Vector2(xVel, yVel);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Debug log for collisions
-        Debug.Log($"Projectile collided with: {other.gameObject.name}");
-
-        // Destroy projectile if it collides with something that isn't the player, collectible, or power-up
-        if (!other.CompareTag("Player") && !other.CompareTag("Collectible") && !other.CompareTag("PowerUp"))
+        if (collision.gameObject.CompareTag("Wall"))
         {
+            Destroy(gameObject);
+        }
+
+        if (collision.gameObject.CompareTag("Enemy") && CompareTag("Projectile"))
+        {
+            collision.gameObject.GetComponent<Enemy>().TakeDamage(10);
             Destroy(gameObject);
         }
     }

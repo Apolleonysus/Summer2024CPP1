@@ -26,20 +26,43 @@ public class Shoot : MonoBehaviour
             xVel = 7.0f;
 
         if (!spawnPointLeft || !spawnPointRight || !projectilePrefab)
-            Debug.Log("Please set default values on the shoot script for object " + gameObject.name);
+            Debug.LogWarning("Please set default values on the shoot script for object " + gameObject.name);
     }
 
     public void Fire()
     {
+        // Debug to check if Fire is being called
+        Debug.Log("Fire method called!");
+
+        if (!projectilePrefab)
+        {
+            Debug.LogError("Projectile prefab is not assigned!");
+            return;
+        }
+
         if (!playerSpriteRenderer.flipX)
         {
+            if (!spawnPointRight)
+            {
+                Debug.LogError("SpawnPointRight not assigned!");
+                return;
+            }
+
             Projectile curProjectile = Instantiate(projectilePrefab, spawnPointRight.position, Quaternion.identity);
             curProjectile.SetVelocity(xVel, yVel);
+            Debug.Log("Projectile spawned from the right!");
         }
         else
         {
+            if (!spawnPointLeft)
+            {
+                Debug.LogError("SpawnPointLeft not assigned!");
+                return;
+            }
+
             Projectile curProjectile = Instantiate(projectilePrefab, spawnPointLeft.position, Quaternion.identity);
             curProjectile.SetVelocity(-xVel, yVel); // Negative xVel for left direction
+            Debug.Log("Projectile spawned from the left!");
         }
     }
 }
